@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <link rel="stylesheet" href="style.css">
     <title>Barbearia</title>
 </head>
+
 <body>
-    
-    <div class="bg-home" >
+
+    <div class="bg-home">
         <header>
 
-            <nav class="header-content container" >
+            <nav class="header-content container">
                 <div class="header-icons" data-aos="fade-down">
                     <a href="#">
                         <i class="fa-brands fa-instagram fa-2x"></i>
@@ -39,16 +41,12 @@
                 </div>
 
                 <div class="header-logo" data-aos="fade-up" data-aos-dalay="300">
-                    <img 
-                    data-aos="flip-up"
-                    data-aos-dalay="300"
-                    data-aos-duration="1500"
-                    src="./assets/logo.svg" 
-                    alt="logo Barbearia">
+                    <img data-aos="flip-up" data-aos-dalay="300" data-aos-duration="1500" src="./assets/logo.svg"
+                        alt="logo Barbearia">
                 </div>
 
                 <div data-aos="fade-down">
-                    <a href="#serviços" class="header-button" >
+                    <a href="#serviços" class="header-button">
                         Serviços
                     </a>
                 </div>
@@ -57,10 +55,11 @@
             <main class="hero container" data-aos="fade-up" data-aos-dalay="400">
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE</h1>
                 <p> horário de funcionamento: 09:00 ás 19:00</p>
-                <a href="https://wa.me/5581996221060?text=Olá! Gostaria de agendar um horário." 
-                class="button-contact" target="_blank">
+                
+              
+                <button class="button-contact" id="openModalBtn">
                     Agendar horário
-                </a>
+                </button>
             </main>
 
         </header>
@@ -71,121 +70,150 @@
             <div data-aos="zoom-in" data-aos-dalay="100">
                 <img src="./assets/images.svg" alt="imagem sobre a Barbearia">
             </div>
-    
-            <div data-aos="zoom-out-left" data-aos-dalay="250"
-            class="about-description">
+
+            <div data-aos="zoom-out-left" data-aos-dalay="250" class="about-description">
                 <h2>Sobre</h2>
-                <p>Na Barbearia [Nome da Barbearia], não é só sobre cortar cabelo — é sobre estilo, atitude e experiência.
-                    Aqui, cada corte é feito com precisão, cada barba aparada com cuidado, e cada cliente sai se sentindo
+                <p>Na Barbearia [Nome da Barbearia], não é só sobre cortar cabelo — é sobre estilo, atitude e
+                    experiência.
+                    Aqui, cada corte é feito com precisão, cada barba aparada com cuidado, e cada cliente sai se
+                    sentindo
                     melhor do que
                     entrou. 💇‍♂️🔥
-    
-                    Somos mais do que uma barbearia: somos um ponto de encontro, um espaço onde tradição e modernidade se
+
+                    Somos mais do que uma barbearia: somos um ponto de encontro, um espaço onde tradição e modernidade
+                    se
                     encontram. Do
-                    corte clássico ao degradê mais afiado, cuidamos do seu visual com técnica, atenção e aquele papo que só
+                    corte clássico ao degradê mais afiado, cuidamos do seu visual com técnica, atenção e aquele papo que
+                    só
                     rola na cadeira de barbeiro. </p>
-    
+
                 <p>Horário de funcionamento: <strong>09:00</strong> ás <strong>19:00</strong></p>
             </div>
-    
+
         </div>
     </section>
 
-<section class="services" id="serviços">
-    <div class="services-content container">
-        <h2>Serviços</h2>
-        <p>Na [Nome da Barbearia], oferecemos serviços completos para cuidar do seu estilo com qualidade e profissionalismo:</p>
-    </div>
-
-    <section class="haircuts">
-
-        <div class="haircut" data-aos="fade-up" data-aos-dalay="150">
-            <img src="./assets/corte1.png" alt="corte tradicional">
-            <div class="haircut-info">
-                <strong>Corte Tradicional</strong>
-                <a href="#">
-                    R$ 20,00
-                </a>
-            </div>
+    <section class="services" id="serviços">
+        <div class="services-content container">
+            <h2>Serviços</h2>
+            <p>Na [Nome da Barbearia], oferecemos serviços completos para cuidar do seu estilo com qualidade e
+                profissionalismo:</p>
         </div>
 
-        <div class="haircut" data-aos="fade-up" data-aos-dalay="250">
-            <img src="./assets/corte2.png" alt=" Corte e Barba">
-            <div class="haircut-info">
-                <strong>Barba Completa</strong>
-                <a href="#">
-                    R$ 40,00
-                </a>
-            </div>
-        </div>
+        <section class="haircuts">
 
-        <div class="haircut" data-aos="fade-up" data-aos-dalay="400">
-            <img src="./assets/corte3.png" alt="corte Degradê">
-            <div class="haircut-info">
-                <strong>Corte Degradê</strong>
-                <a href="#">
-                    R$ 30,00
-                </a>
+            <div class="haircut" data-aos="fade-up" data-aos-dalay="150">
+                <img src="./assets/corte1.png" alt="corte tradicional">
+                <div class="haircut-info">
+                    <strong>Corte Tradicional</strong>
+                    <a href="#">
+                        R$ 20,00
+                    </a>
+                </div>
             </div>
-        </div>
 
+            <div class="haircut" data-aos="fade-up" data-aos-dalay="250">
+                <img src="./assets/corte2.png" alt=" Corte e Barba">
+                <div class="haircut-info">
+                    <strong>Barba Completa</strong>
+                    <a href="#">
+                        R$ 40,00
+                    </a>
+                </div>
+            </div>
+
+            <div class="haircut" data-aos="fade-up" data-aos-dalay="400">
+                <img src="./assets/corte3.png" alt="corte Degradê">
+                <div class="haircut-info">
+                    <strong>Corte Degradê</strong>
+                    <a href="#">
+                        R$ 30,00
+                    </a>
+                </div>
+            </div>
+
+        </section>
     </section>
-</section>
 
 
 
 
-<div class="services">
-    <h2>Venha nos Conhecer</h2>
-
-</div>
-
-<iframe
-width="100%"
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.5469860211556!2d-34.915291026190054!3d-8.045550580353531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1902b55d4a1b%3A0x62f009f8fa918156!2sConjunto%20habitacional%20da%20Torre!5e0!3m2!1spt-BR!2sbr!4v1751511167281!5m2!1spt-BR!2sbr"
-    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-<footer class="footer">
-    <div class="footer-icons">
-
-        <a href="#">
-            <i class="fa-brands fa-instagram fa-2x"></i>
-        </a>
-        
-        <a href="#">
-            <i class="fa-brands fa-facebook fa-2x"></i>
-        </a>
-        
-        <a href="#">
-            <i class="fa-brands fa-tiktok fa-2x"></i>
-        </a>
+    <div class="services">
+        <h2>Venha nos Conhecer</h2>
 
     </div>
 
-    <div>
-        <img src="./assets/logo.svg" alt="logo barbearia">
+    <iframe width="100%"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.5469860211556!2d-34.915291026190054!3d-8.045550580353531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1902b55d4a1b%3A0x62f009f8fa918156!2sConjunto%20habitacional%20da%20Torre!5e0!3m2!1spt-BR!2sbr!4v1751511167281!5m2!1spt-BR!2sbr"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <footer class="footer">
+        <div class="footer-icons">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-facebook fa-2x"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+
+        </div>
+
+        <div>
+            <img src="./assets/logo.svg" alt="logo barbearia">
+        </div>
+
+        <p>Copyright | <Data>Dev Barbearia - Todos Direitos Reservados. </Data></p>
+    </footer>
+
+
+    <a href="https://wa.me/5581996221060?text=Olá! Gostaria de agendar um horário." class="btn-whatsapp" target="_blank"
+        data-aos="zoom-in-uo" data-aos-dalay="400">
+        <img src="./assets/whatssapp.svg" alt="botão whatssapp">
+        <span class="tooltip-text">Agende Seu Horário</span>
+
+    </a>
+
+    <!-- Modal de Agendamento -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Escolha seu horário</h2>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" required>
+
+            <label for="hora">Hora:</label>
+            <select id="hora">
+                <option value="">Selecione um horário</option>
+                <option>09:00</option>
+                <option>10:00</option>
+                <option>11:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+            </select>
+
+            <button id="confirmarBtn">Agendar via WhatsApp</button>
+        </div>
     </div>
 
-    <p>Copyright | <Data>Dev Barbearia - Todos Direitos Reservados. </Data></p>
-</footer>
 
 
-<a 
-href="https://wa.me/5581996221060?text=Olá! Gostaria de agendar um horário."
-class="btn-whatsapp"
-target="_blank"
 
-data-aos="zoom-in-uo" data-aos-dalay="400"
->
-<img src="./assets/whatssapp.svg" alt="botão whatssapp">
-<span class="tooltip-text">Agende Seu Horário</span>
 
-</a>
 
-<script>
-    AOS.init();
-</script>
+<script src="./script.js"></script>
 </body>
 
 </html>
