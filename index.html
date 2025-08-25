@@ -13,8 +13,7 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 
     <link rel="stylesheet" href="style.css">
     <title>Barbearia</title>
@@ -40,8 +39,8 @@
                     </a>
                 </div>
 
-                <div class="header-logo" data-aos="fade-up" data-aos-dalay="300">
-                    <img data-aos="flip-up" data-aos-dalay="300" data-aos-duration="1500" src="./assets/logo.svg"
+                <div class="header-logo" data-aos="fade-up" data-aos-delay="300">
+                    <img data-aos="flip-up" data-aos-delay="300" data-aos-duration="1500" src="./assets/logo.svg"
                         alt="logo Barbearia">
                 </div>
 
@@ -49,14 +48,16 @@
                     <a href="#serviços" class="header-button">
                         Serviços
                     </a>
+
+
                 </div>
             </nav>
 
-            <main class="hero container" data-aos="fade-up" data-aos-dalay="400">
+            <main class="hero container" data-aos="fade-up" data-aos-delay="400">
                 <h1>ESTILO É UM REFLEXO DA SUA ATITUDE E SUA PERSONALIDADE</h1>
                 <p> horário de funcionamento: 09:00 ás 19:00</p>
-                
-              
+
+
                 <button class="button-contact" id="openModalBtn">
                     Agendar horário
                 </button>
@@ -67,11 +68,11 @@
 
     <section class="about">
         <div class="container about-content">
-            <div data-aos="zoom-in" data-aos-dalay="100">
+            <div data-aos="zoom-in" data-aos-delay="100">
                 <img src="./assets/images.svg" alt="imagem sobre a Barbearia">
             </div>
 
-            <div data-aos="zoom-out-left" data-aos-dalay="250" class="about-description">
+            <div data-aos="zoom-out-left" data-aos-delay="250" class="about-description">
                 <h2>Sobre</h2>
                 <p>Na Barbearia [Nome da Barbearia], não é só sobre cortar cabelo — é sobre estilo, atitude e
                     experiência.
@@ -102,7 +103,7 @@
 
         <section class="haircuts">
 
-            <div class="haircut" data-aos="fade-up" data-aos-dalay="150">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="150">
                 <img src="./assets/corte1.png" alt="corte tradicional">
                 <div class="haircut-info">
                     <strong>Corte Tradicional</strong>
@@ -112,7 +113,7 @@
                 </div>
             </div>
 
-            <div class="haircut" data-aos="fade-up" data-aos-dalay="250">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="250">
                 <img src="./assets/corte2.png" alt=" Corte e Barba">
                 <div class="haircut-info">
                     <strong>Barba Completa</strong>
@@ -122,7 +123,7 @@
                 </div>
             </div>
 
-            <div class="haircut" data-aos="fade-up" data-aos-dalay="400">
+            <div class="haircut" data-aos="fade-up" data-aos-delay="400">
                 <img src="./assets/corte3.png" alt="corte Degradê">
                 <div class="haircut-info">
                     <strong>Corte Degradê</strong>
@@ -136,6 +137,32 @@
     </section>
 
 
+<!-- Testimonials Section -->
+<section class="testimonials" id="testimonials">
+    <div class="container">
+        <h2 class="section-title">O Que Nossas Clientes Dizem</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Simplesmente incrível! A equipe é super atenciosa e o resultado do meu
+                    cabelo ficou perfeito. Recomendo de olhos fechados!"</p>
+                <p class="testimonial-author">- Maria Silva</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"Ambiente acolhedor e profissionais extremamente capacitados. Sempre
+                    saio de lá me sentindo renovada e linda!"</p>
+                <p class="testimonial-author">- Ana Santos</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="stars">★★★★★</div>
+                <p class="testimonial-text">"O melhor salão da região! Preços justos e qualidade excepcional. Sou
+                    cliente fiel há mais de 3 anos."</p>
+                <p class="testimonial-author">- Juliana Costa</p>
+            </div>
+        </div>
+    </div>
+</section>
 
 
     <div class="services">
@@ -148,8 +175,8 @@
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-    <footer class="footer">
-        <div class="footer-icons">
+    <footer class="footer" >
+        <div class="footer-icons bg-home">
 
             <a href="#">
                 <i class="fa-brands fa-instagram fa-2x"></i>
@@ -169,18 +196,19 @@
             <img src="./assets/logo.svg" alt="logo barbearia">
         </div>
 
-        <p>Copyright | <Data>Dev Barbearia - Todos Direitos Reservados. </Data></p>
+        <p>Copyright | <data>Dev Barbearia - Todos Direitos Reservados. </data></p>
     </footer>
 
 
     <a href="https://wa.me/5581996221060?text=Olá! Gostaria de agendar um horário." class="btn-whatsapp" target="_blank"
-        data-aos="zoom-in-uo" data-aos-dalay="400">
+        data-aos="zoom-in-uo" data-aos-delay="400">
         <img src="./assets/whatssapp.svg" alt="botão whatssapp">
         <span class="tooltip-text">Agende Seu Horário</span>
 
     </a>
 
     <!-- Modal de Agendamento -->
+
     <div id="modal" class="modal">
         <div class="modal-content">
             <span class="close">&times;</span>
@@ -211,9 +239,7 @@
 
 
 
-
-
-<script src="./script.js"></script>
+    <script type="module" src="./script.js"></script>
 </body>
 
 </html>

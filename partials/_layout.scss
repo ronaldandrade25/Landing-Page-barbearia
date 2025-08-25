@@ -1,19 +1,19 @@
-.container{
+.container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 8px;
 }
 
-.bg-home{
+.bg-home {
     position: relative;
 
 }
 
-.bg-home::before{
+.bg-home::before {
     content: '';
     display: block;
     position: absolute;
-    background-image: linear-gradient(to bottom, rgba(6,18,30,0.1), #06121e), url("../assets/bg.svg");
+    background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
     left: 0;
     top: 0;
     width: 100%;
@@ -21,13 +21,13 @@
     z-index: -1;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:50% 0  ;
+    background-position: 50% 0;
     opacity: 0.9;
 
 }
 
 
-.hero{
+.hero {
     color: $white-normal;
     min-height: 80%;
 
@@ -37,21 +37,21 @@
     justify-content: center;
     padding: 14px;
 
-    h1{
+    h1 {
         text-align: center;
         line-height: 150%;
         max-width: 940px;
         font-size: 46px;
     }
 
-    p{
+    p {
         text-align: center;
         margin: 14px 0;
 
     }
 }
 
-.button-contact{
+.button-contact {
     padding: 14px 28px;
     color: $white-normal;
     background-color: $red-normal;
@@ -62,43 +62,44 @@
     border-radius: 20px;
 }
 
-.button-contact:hover{
+.button-contact:hover {
     animation: scaleButton 0.8s alternate infinite;
 }
 
-@keyframes scaleButton{
-    from{
+@keyframes scaleButton {
+    from {
         transform: scale(1);
-    } 
-    to{
+    }
+
+    to {
         transform: scale(1.07);
     }
 }
 
 
 
-@media screen  and (max-width: 700px){
-    .hero{
+@media screen and (max-width: 700px) {
+    .hero {
         min-height: 60vh;
     }
 
-    h1{
+    h1 {
         font-size: 20px;
         padding: 0 14px;
         width: 100%;
     }
 
-    p{
+    p {
         font-size: 14px;
     }
 }
 
-@media screen  and (max-width: 480px){
-    .hero h1{
-       font-size: 24px;
+@media screen and (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
     }
 
-  
+
 }
 
 
@@ -108,42 +109,43 @@
 /*  about */
 
 
-.about{
+.about {
     background-color: $primary-normal;
     overflow: hidden;
     color: $white-normal;
 }
 
-.about-content{
+.about-content {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 14px;
     padding: 34px 14px 64px 14px;
-    img{
-        max-width: 570px;  
-      }
+
+    img {
+        max-width: 570px;
+    }
 }
 
-.about-content div{
+.about-content div {
     flex: 1;
 }
 
-.about-description{
+.about-description {
 
-    h2{
-       font-size: 38px;
-       margin-bottom: 24px; 
+    h2 {
+        font-size: 38px;
+        margin-bottom: 24px;
     }
 
-    p{
+    p {
         margin-bottom: 14px;
         line-height: 150%;
     }
 }
 
-@media screen and (max-width:700px){
-    .about-content{
+@media screen and (max-width:700px) {
+    .about-content {
         flex-direction: column;
     }
 }
@@ -152,7 +154,7 @@
 /* services */
 
 
-.services{
+.services {
     background-color: $white-normal;
     color: $black-normal;
     display: flex;
@@ -162,21 +164,21 @@
     padding: 54px 14px;
 }
 
-.services-content h2{
+.services-content h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 38px;
     margin-bottom: 14px;
 }
 
-.services-content p{
+.services-content p {
     line-height: 150%;
     margin-bottom: 14px;
     text-align: center;
     max-width: 780px;
 }
 
-.haircuts{
+.haircuts {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,18 +186,18 @@
     padding: 0 44px 34px 44px;
 }
 
-.haircut{
+.haircut {
     flex: 1;
     display: flex;
     flex-direction: column;
     background-color: $white-normal;
     border-radius: 8px;
-    box-shadow: 0px -1px 17px -4px rgba(0,0,0, 0.45);
+    box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
 
     overflow: hidden;
 
 
-    img{
+    img {
         width: 100%;
         max-width: 354px;
         transition: transform 0.2s;
@@ -203,12 +205,12 @@
     }
 }
 
-.haircut img:hover{
+.haircut img:hover {
     transform: scale(1.2);
     z-index: 1;
 }
 
-.haircut-info{
+.haircut-info {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -217,19 +219,19 @@
     z-index: 99;
 }
 
-.haircut-info a{
+.haircut-info a {
     color: $white-normal;
     background-color: $red-normal;
     padding: 4px 8px;
     border-radius: 4px;
     border: 0;
-    
+
 }
 
 
-@media screen  and (max-width: 700px){
-    
-    .haircuts{
+@media screen and (max-width: 700px) {
+
+    .haircuts {
         flex-direction: column;
     }
 }
@@ -237,7 +239,7 @@
 
 /* footer */
 
-.footer{
+.footer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,29 +249,29 @@
     color: $white-normal;
 }
 
-.footer-icons{
+.footer-icons {
     display: flex;
     gap: 8px;
     color: $white-normal;
 }
 
-.btn-whatsapp{
+.btn-whatsapp {
     position: fixed;
     bottom: 14px;
     right: 24px;
     z-index: 99;
-    
-    img{
+
+    img {
         max-width: 74px;
         transition: transform 0.4s;
     }
 
-    img:hover{
+    img:hover {
         transform: scale(1.1);
     }
 }
 
-.btn-whatsapp .tooltip-text{
+.btn-whatsapp .tooltip-text {
     visibility: hidden;
     position: absolute;
     width: 120px;
@@ -284,15 +286,17 @@
     transition: opacity 0.4s;
 }
 
-.btn-whatsapp:hover .tooltip-text{
+.btn-whatsapp:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
 }
 
-@media screen  and (max-width: 700px){
-    .btn-whatsapp{
-        img{ 
+@media screen and (max-width: 700px) {
+    .btn-whatsapp {
+        img {
             max-width: 64px;
-    }
+        }
     }
 }
+
+

@@ -265,7 +265,7 @@ i {
   display: flex;
   justify-content: space-between;
   padding: 14px;
-r: #fff;  background-color: #fff;
+  background-color: #fff;
   z-index: 99;
 }
 
@@ -282,6 +282,49 @@ r: #fff;  background-color: #fff;
     flex-direction: column;
   }
 }
+
+
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+    padding: 80px 5%;
+    background: var(--bg-light);
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.testimonial-author {
+    font-weight: 600;
+    color: var(--text-dark);
+}
+
+
+
+
+
 /* footer */
 .footer {
   display: flex;
@@ -365,22 +408,24 @@ a {
 }/*# sourceMappingURL=style.css.map */
 
 .footer-icons a:hover i {
-  color: #d34040;
-  animation: translatey 0.8s infinite alternate;
+    color: #d34040;
+    animation: translatey 0.8s infinite alternate;
 }
 
-  .modal {
+.modal {
     display: none;
     position: fixed;
     z-index: 999;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background-color: rgba(0,0,0,0.7);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     justify-content: center;
     align-items: center;
-  }
+}
 
-  .modal-content {
+.modal-content {
     background-color: #fff;
     padding: 30px;
     border-radius: 10px;
@@ -390,19 +435,19 @@ a {
     flex-direction: column;
     gap: 10px;
     font-family: 'Sora', sans-serif;
-  }
+}
 
-  .modal-content label {
+.modal-content label {
     font-weight: bold;
-  }
+}
 
-  .modal-content select, 
-  .modal-content input[type="date"] {
+.modal-content select,
+.modal-content input[type="date"] {
     padding: 8px;
     font-size: 16px;
-  }
+}
 
-  #confirmarBtn {
+#confirmarBtn {
     margin-top: 15px;
     background-color: #25D366;
     color: white;
@@ -411,12 +456,10 @@ a {
     border-radius: 6px;
     cursor: pointer;
     font-weight: bold;
-  }
+}
 
-  .close {
+.close {
     align-self: flex-end;
     font-size: 22px;
     cursor: pointer;
-  }
-
-
+}
