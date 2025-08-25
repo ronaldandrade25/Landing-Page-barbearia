@@ -288,7 +288,7 @@ i {
 /* ===== TESTIMONIALS ===== */
 .testimonials {
     padding: 80px 5%;
-    background: var(--bg-light);
+    background:  #06121e;
 }
 
 .testimonials-grid {
@@ -298,7 +298,7 @@ i {
 }
 
 .testimonial-card {
-    background: var(--white);
+    background: #fff;
     padding: 2rem;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
@@ -321,9 +321,14 @@ i {
     color: var(--text-dark);
 }
 
-
-
-
+.section-title{
+  display: block;
+  font-size: 28px;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
 
 /* footer */
 .footer {
